@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:id="@+id/MainLayout">
+    <TextView
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:text="CELL BROADCASTING STATUS IS:"
+            android:id="@+id/whatever"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="UNKNOWN"
+            android:id="@+id/cbstatus" android:layout_gravity="right"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Launch Cell Broadcasting"
+            android:id="@+id/launcherButton" android:onClick="LaunchCellBroadcasting"/>
+    <Button android:layout_width="312dp" android:layout_height="wrap_content"
+            android:text="Messages List" android:id="@+id/button2"
+            android:onClick="LaunchCellBroadcastingList"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn ON"
+            android:id="@+id/onbutton" android:onClick="turnOnCellBroadcasting"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Turn OFF"
+            android:id="@+id/offbutton" android:onClick="turnOffCellBroadcasting"/>
+</LinearLayout>
+
